@@ -1,0 +1,120 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #898989a5;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background: #333333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    height: 150px;
+    background: rgb(51, 51, 51);
+    background: linear-gradient(180deg, rgba(51, 51, 51, 1) 26%, rgba(51, 51, 51, 0.9613095238095238) 41%, rgba(51, 51, 51, 0.8996848739495799) 54%, rgba(51, 51, 51, 0.8128501400560224) 65%, rgba(51, 51, 51, 0.6559873949579832) 78%, rgba(51, 51, 51, 0) 100%);
+}
+
+
+
+.button a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    margin: 20px auto;
+    /* Center container horizontally */
+    /* background-color: rgba(0, 0, 0, 0.516); */
+    width: fit-content;
+    /* Adjust to fit the buttons */
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 0 10px;
+    /* Add padding for spacing */
+}
+
+.button {
+    outline: 0;
+    border: 0;
+    width: 80px;
+    /* Increase width for larger clickable area */
+    height: 30px;
+    border-radius: 5px;
+    /* Slightly rounded buttons */
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    background-color: #444;
+    /* Add hover background */
+    border-radius: 10px;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.hero {
+    background: url('images/luffy_homeWall.jpg') no-repeat center center/cover;
+    height: 450px;
+    top: -130px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: -1;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.review {
+    background: #333333;
+    color: #fffcf5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    flex: 1 1 calc(30% - 20px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

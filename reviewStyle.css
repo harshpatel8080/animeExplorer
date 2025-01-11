@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    /* Light Grey */
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    overflow: hidden;
+}
+
+header {
+    background-color: #242424;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    height: 15vh;
+    background-image: url(images/anw-min.jpg.webp);
+    background-position: 99.9% 0px;
+    background-size: 20%;
+    /* Make the image even smaller */
+    background-repeat: no-repeat;
+    /* background-blend-mode: multiply; */
+}
+
+header span {
+    position: absolute;
+    right: 190px;
+    top: 0;
+    height: 21vh;
+    width: 10vw;
+    background: rgb(36, 36, 36);
+    background: linear-gradient(90deg, rgba(36, 36, 36, 1) 20%, rgba(36, 36, 36, 0) 100%);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #242424;
+    /* Dark Grey */
+    color: #fff;
+    height: 5vh;
+}
+
+/* reviews Section */
+.reviews-section {
+    box-sizing: border-box;
+    height: 70vh;
+    background-color: #f9f9f9;
+    /* Light Grey */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+.review-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 20px;
+    padding: 20px;
+    background: #242424;
+    /* Dark Grey */
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+}
+
+.review-card img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.review-content {
+    flex-grow: 1;
+}
+
+.review-content h2 {
+    font-size: 1.5em;
+    color: #fff;
+    /* White */
+    margin: 0 0 10px;
+}
+
+.review-content p {
+    line-height: 1.6;
+    color: #fff;
+    /* White */
+}
+
+.review-meta {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #aaa;
+    /* Light Grey */
+}
+
+.review-meta .author {
+    color: #fff;
+    /* White */
+    font-weight: bold;
+}
+
+.button a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    margin: 20px auto;
+    /* Center container horizontally */
+    /* background-color: rgba(0, 0, 0, 0.516); */
+    width: fit-content;
+    /* Adjust to fit the buttons */
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 0 10px;
+    /* Add padding for spacing */
+}
+
+.button {
+    outline: 0;
+    border: 0;
+    width: 80px;
+    /* Increase width for larger clickable area */
+    height: 30px;
+    border-radius: 5px;
+    /* Slightly rounded buttons */
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    background-color: #444;
+    /* Add hover background */
+    border-radius: 10px;
+}
