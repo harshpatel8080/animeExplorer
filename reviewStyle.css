@@ -1,12 +1,11 @@
-/* General Styles */
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #f0f0f0;
-    /* Light Grey */
     margin: 0;
     padding: 0;
-    color: #242424;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #fffaf7;
+    background-image: linear-gradient(62deg, #fffaf7 0%, #ffecbb 100%);
 }
 
 header {
@@ -15,12 +14,11 @@ header {
     text-align: center;
     padding: 20px;
     height: 15vh;
-    background-image: url(images/anw-min.jpg.webp);
-    background-position: 99.9% 0px;
-    background-size: 20%;
-    /* Make the image even smaller */
+    background-image: url('images/anw-min.jpg.webp'),
+        linear-gradient(to right, rgba(36, 36, 36, 0.5), transparent 90%);
+    background-position: 99.9% 0px, 0 0;
+    background-size: 20%, 100%;
     background-repeat: no-repeat;
-    /* background-blend-mode: multiply; */
 }
 
 header span {
@@ -37,24 +35,20 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #242424;
-    /* Dark Grey */
     color: #fff;
     height: 5vh;
 }
 
-/* reviews Section */
 .reviews-section {
     box-sizing: border-box;
     height: 70vh;
     background-color: #f9f9f9;
-    /* Light Grey */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-
+    background-color: #fffaf7;
+    background-image: linear-gradient(62deg, #fffaf7 0%, #ffecbb 100%);
 }
 
 .review-card {
@@ -65,7 +59,6 @@ footer {
     gap: 20px;
     padding: 20px;
     background: #242424;
-    /* Dark Grey */
     color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -84,32 +77,28 @@ footer {
 }
 
 .review-content h2 {
-    font-size: 1.5em;
+    font-size: 2rem;
     color: #fff;
-    /* White */
     margin: 0 0 10px;
 }
 
 .review-content p {
     line-height: 1.6;
     color: #fff;
-    /* White */
 }
 
 .review-meta {
     margin-top: 10px;
     font-size: 0.9em;
     color: #aaa;
-    /* Light Grey */
 }
 
 .review-meta .author {
     color: #fff;
-    /* White */
     font-weight: bold;
 }
 
-.button a {
+.button {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
@@ -118,26 +107,20 @@ footer {
 .button-container {
     display: flex;
     margin: 20px auto;
-    /* Center container horizontally */
-    /* background-color: rgba(0, 0, 0, 0.516); */
     width: fit-content;
-    /* Adjust to fit the buttons */
     height: 40px;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
     padding: 0 10px;
-    /* Add padding for spacing */
 }
 
 .button {
     outline: 0;
     border: 0;
     width: 80px;
-    /* Increase width for larger clickable area */
     height: 30px;
     border-radius: 5px;
-    /* Slightly rounded buttons */
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -149,7 +132,61 @@ footer {
 
 .button:hover {
     transform: translateY(-3px);
-    background-color: #444;
-    /* Add hover background */
+    background-color: #242424;
     border-radius: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.hero {
+    background: url('images/luffy_homeWall.jpg') no-repeat center center/cover;
+    height: 450px;
+    top: -130px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: -1;
+    border: 2px solid #242424;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: white;
+    text-shadow: 1px 1px 5px #242424;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.review {
+    background: #242424;
+    color: #fffcf5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #242424;
+    margin: 10px;
+    padding: 15px;
+    flex: 1 1 calc(30% - 20px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #242424;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

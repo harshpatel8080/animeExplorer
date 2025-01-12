@@ -43,7 +43,6 @@ let currentIndex = 0;
 
 function updateCards() {
     const cards = document.querySelectorAll('.review-card');
-    // console.log(cards);
     gsap.to(cards, {
         duration: 0.6,
         ease: 'power2.inOut',
@@ -91,9 +90,6 @@ function updateCards() {
     return cards
 }
 
-// Initial card positioning
-
-// Event listeners (you can add more for touch events, etc.)
 window.addEventListener('wheel', (event) => {
     if (event.deltaY > 0 && currentIndex < cards.length - 1) {
         currentIndex++;
@@ -113,13 +109,5 @@ async function main() {
         const card = createReviewCard(reviewData[i])
         reviewSection.appendChild(card)
     }
-    console.log('tables created');
-    
-
-
-
     cards = updateCards();
-    console.log(cards);
-
-    console.log('after');
 }

@@ -1,24 +1,29 @@
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #898989a5;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #fffaf7;
+    background-image: linear-gradient(62deg, #fffaf7 0%, #ffecbb 100%);
 }
 
 header {
-    background: #333333;
+    background-color: #242424;
     color: #fff;
     padding: 10px 0;
     text-align: center;
     height: 150px;
-    background: rgb(51, 51, 51);
-    background: linear-gradient(180deg, rgba(51, 51, 51, 1) 26%, rgba(51, 51, 51, 0.9613095238095238) 41%, rgba(51, 51, 51, 0.8996848739495799) 54%, rgba(51, 51, 51, 0.8128501400560224) 65%, rgba(51, 51, 51, 0.6559873949579832) 78%, rgba(51, 51, 51, 0) 100%);
+    background: #242424;
+    background: linear-gradient(180deg, rgba(36, 36, 36, 1) 26%, rgba(36, 36, 36, 0.9613095238095238) 41%, rgba(36, 36, 36, 0.8996848739495799) 54%, rgba(36, 36, 36, 0.8128501400560224) 65%, rgba(36, 36, 36, 0.6559873949579832) 78%, rgba(36, 36, 36, 0) 100%);
+    position: relative;
 }
 
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
 
-
-.button a {
+.button {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
@@ -27,26 +32,20 @@ header {
 .button-container {
     display: flex;
     margin: 20px auto;
-    /* Center container horizontally */
-    /* background-color: rgba(0, 0, 0, 0.516); */
     width: fit-content;
-    /* Adjust to fit the buttons */
     height: 40px;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
     padding: 0 10px;
-    /* Add padding for spacing */
 }
 
 .button {
     outline: 0;
     border: 0;
     width: 80px;
-    /* Increase width for larger clickable area */
     height: 30px;
     border-radius: 5px;
-    /* Slightly rounded buttons */
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -58,12 +57,9 @@ header {
 
 .button:hover {
     transform: translateY(-3px);
-    background-color: #444;
-    /* Add hover background */
+    background-color: #242424;
     border-radius: 10px;
 }
-
-
 
 .container {
     width: 80%;
@@ -79,6 +75,7 @@ header {
     color: #fff;
     text-align: center;
     z-index: -1;
+    border: 2px solid #242424;
 }
 
 .hero h1 {
@@ -88,7 +85,7 @@ header {
     transform: translate(-50%, -50%);
     font-size: 3em;
     color: white;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 5px #242424;
 }
 
 .reviews {
@@ -99,11 +96,11 @@ header {
 }
 
 .review {
-    background: #333333;
+    background: #242424;
     color: #fffcf5;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px #242424;
     margin: 10px;
     padding: 15px;
     flex: 1 1 calc(30% - 20px);
@@ -112,7 +109,7 @@ header {
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
+    background: #242424;
     color: #fff;
     position: relative;
     bottom: 0;
